@@ -4,7 +4,7 @@ import { TransactionService } from '../service/transaction.service';
 @Component({
   selector: 'app-exercise3',
   templateUrl: './exercise3.component.html',
-  styleUrl: './exercise3.component.css'
+  styleUrl: './exercise3.component.scss'
 })
 export class Exercise3Component {
   transactions: any[] = []; 
