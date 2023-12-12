@@ -1,0 +1,43 @@
+<div class="calculator-div">
+
+    <h1>Calculator</h1>
+  
+    <hr> <br>
+  
+    <div class="label-row">
+      <div class="label-column">
+        <label for="number1">Number 1:</label>
+        <input type="number" id="number1" [(ngModel)]="number1" />
+      </div>
+  
+      <div class="label-column">
+        <label for="operation">Operation:</label>
+        <select id="operation" [(ngModel)]="selectedOperation">
+          <option value="add">+</option>
+          <option value="subtract">-</option>
+          <option value="multiply">x</option>
+          <option value="divide">/</option>
+        </select>
+      </div>
+  
+      <div class="label-column">
+        <label for="number2">Number 2:</label>
+        <input type="number" id="number2" [(ngModel)]="number2" />
+      </div>
+      <button (click)="compute()">Compute</button>
+    </div>
+  
+    <div class="result">
+      <p>Result : {{ result }}</p>
+    </div>
+  
+    <div class="history">
+      <h2>Historical area</h2>
+      <div *ngFor="let enreg of history">
+        <p>Date: {{ enreg.time | date:'medium' }}</p>
+        <p>Operation: {{ enreg.operation }}</p>
+        <p>Result: {{ enreg.result }}</p>
+        <button (click)="removeEnreg(enreg)">Erase</button>
+      </div>
+    </div>
+  </div>

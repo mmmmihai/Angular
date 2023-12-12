@@ -1,0 +1,29 @@
+div {
+    text-align: center;
+    background-color: rgb(69, 190, 98);
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+
+  }
+  
+  .result-div {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Calibri, sans-serif;
+    background-color: rgb(35, 135, 122);
+    font-size: 18px;
+    width: 98%;
+  }
+ 
+  mat-form-field {
+    width: 100%;
+  }
+
+  .align {
+    color:white;
+  }
+ 
+  

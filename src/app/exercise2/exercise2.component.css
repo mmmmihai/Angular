@@ -1,0 +1,47 @@
+.calculator-div {
+    background-color: rgb(69, 190, 98);
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50%;
+    padding: 2rem;
+ }
+
+.label-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.history {
+    background-color: rgb(35, 135, 122);
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+input {
+    width: 4rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    background-color: black;
+    border-style: solid;
+}
+input, option, select, button {
+    background-color:#4a4a4a;
+    color:white
+}
+.result {
+    font-weight: 600 ;
+    display: flex;
+    justify-content: center;
+}

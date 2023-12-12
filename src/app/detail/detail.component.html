@@ -1,0 +1,13 @@
+<mat-card>
+    <mat-card-content *ngIf="transaction">
+        <h2>Transaction details</h2>
+        <ul>
+          <li><strong>ID:</strong> {{ transaction.id }}</li>
+          <li><strong>Amount:</strong> {{ transaction.amount | currency:'EUR' }}</li>
+          <li><strong>Balance:</strong> {{ transaction.balance | currency:'EUR' }}</li>
+          <li><strong>Label:</strong> {{ transaction.label }}</li>
+          <li><strong>Descripción:</strong> {{ transaction.description }}</li>
+          <li><strong>Fecha:</strong> {{ transaction.date | date:'short' }}</li>
+        </ul>
+    </mat-card-content>
+  </mat-card>

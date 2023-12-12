@@ -1,0 +1,41 @@
+<div>
+    <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput type="text" [(ngModel)]="value" [(ngModel)]="name" aria-label="InputName">
+        <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+            <mat-icon>close</mat-icon>
+        </button>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field>
+        <mat-label>Choose a font:</mat-label>
+        <select matNativeControl [(ngModel)]="selectedFont" name="font" aria-label="SelectFont">
+            <option value="Calibri">Calibri</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Garamond">Garamond</option>
+
+        </select>
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field>
+        <mat-label>Choose font size:</mat-label>
+        <input type="number" matInput placeholder="20" [(ngModel)]="fontSize">
+    </mat-form-field>
+
+    <br>
+
+    <mat-radio-group [(ngModel)]="selectedAlignment" class="align">Choose alignment :
+        <mat-radio-button value="left">Left:</mat-radio-button>
+        <mat-radio-button value="center">Center:</mat-radio-button>
+        <mat-radio-button value="right">Right:</mat-radio-button>
+    </mat-radio-group>
+
+
+    <div class="result-div" [style.font-family]="selectedFont" [style.font-size.px]="fontSize"
+        [style.text-align]="getAlignment()">
+        <p>Hello {{ name | uppercase }}!</p>
+    </div>
+</div>

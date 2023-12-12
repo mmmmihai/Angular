@@ -1,0 +1,14 @@
+.body-div {
+    margin: 4rem;
+}
+
+p {
+    text-align: right;
+    margin: 2rem;
+}
+.body-m {
+    background-color: green;
+    display:flex;
+    width:100%;
+    flex-direction:row;
+}

@@ -1,0 +1,16 @@
+mat-menu {
+    background-color: rgb(69, 190, 98);
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+
+}
+
+button {
+    width: 50px;
+}
+
+
+.exButton {
+    width:100px;
+}

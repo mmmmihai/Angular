@@ -1,0 +1,8 @@
+mat-card {
+    width: 30vw;
+    margin: 1rem auto;
+    background-color: rgb(16, 153, 61);
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 4rem;
+}
