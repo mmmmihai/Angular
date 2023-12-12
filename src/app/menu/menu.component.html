@@ -1,9 +1,9 @@
 <button mat-button [matMenuTriggerFor]="menu">Menu</button>
 <mat-menu #menu="matMenu">
-    <button mat-menu-item onClick="window.open('/exercise1')" class="exButton">Exercise1
+    <button mat-menu-item [routerLink]="['/exercise1']" class="exButton">Exercise1
     </button>
-    <button mat-menu-item onClick="window.open('/exercise2')" class="exButton">Exercise2
+    <button mat-menu-item [routerLink]="['/exercise2']"class="exButton">Exercise2
     </button>
-    <button mat-menu-item onClick="window.open('/exercise3')" class="exButton">Exercise3
+    <button mat-menu-item [routerLink]="['/exercise3']" class="exButton">Exercise3
     </button>
 </mat-menu>
