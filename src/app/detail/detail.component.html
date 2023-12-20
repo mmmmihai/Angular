@@ -9,5 +9,6 @@
           <li><strong>Descripción:</strong> {{ transaction.description }}</li>
           <li><strong>Fecha:</strong> {{ transaction.date | date:'short' }}</li>
         </ul>
+        <h3><a [routerLink]="['/exercise3']">Transaction list</a></h3>
     </mat-card-content>
   </mat-card>

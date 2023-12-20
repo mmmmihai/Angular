@@ -22,6 +22,9 @@ import { MatCardModule } from '@angular/material/card';
 import {MatMenuModule} from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSort, Sort, MatSortModule} from '@angular/material/sort';
+import {MatTableDataSource, MatTableModule} from '@angular/material/table';
+
 
 @NgModule({
   declarations: [
@@ -48,7 +51,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatCardModule,
     MatMenuModule,
     MatToolbarModule,
-
+    MatTableModule, 
+    MatSortModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
